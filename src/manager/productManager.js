@@ -1,5 +1,6 @@
-const fs = require("fs");
-class ProductManager {
+import fs from "fs";
+import { v4 as uuidv4 } from "uuid";
+export default class ProductManager {
     constructor(path) {
         this.path = path;
     }
@@ -16,25 +17,28 @@ class ProductManager {
             console.log(error);
         }
     }
-    async addProducts(product) {
-        const products = await this.getProducts();
-        products.push(product);
-    }
-    async getId() {
-        const products = await this.getProducts();
-        let prodId = 0;
-        products.map((product) => {
-            if (product.id > prodId) prodId = product.id;
-        });
-        return prodId;
+    async addProducts(object) {
+        try {
+            const product = {
+                id: uuidv4(),
+                status: true,
+                ...object,
+            };
+            const products = await this.getProducts();
+            products.push(product);
+            await fs.promises.writeFile(this.path, JSON.stringify(products));
+            return product;
+        } catch (error) {
+            console.log(error);
+        }
     }
 
-
-    async getProductById(product) {
+    async getProductById(id) {
         try {
             const products = await this.getProducts();
-            products.find(product => product.id === id);
-            return product;
+           const findProdId = products.find((p) => p.id === id);
+            if (!findProdId)return null;
+             return findProdId;
         } catch (error) {
             console.log("No existe este producto");
         }
@@ -68,7 +72,9 @@ class ProductManager {
 }
 
 
-const prodManager = new ProductManager("./products.json")
+
+
+/* const prodManager = new ProductManager("./products.json")
 const prod1 = {
     id: 1,
     title: "Lapicera Bic Round Stic Azul x12u",
@@ -122,4 +128,4 @@ const test = async () => {
     //await prodManager.deleteProduct(1);
 }
 
-test();
+test(); */

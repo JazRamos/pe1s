@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "Lapicera Bic Round Stic Azul x12u",
+        "description": "Caja por 12 unidades de lapiceras Bic línea Round Stic, color azul, trazo grueso.",
+        "price": 3945,
+        "thumbnail": "https: //res.cloudinary.com/diklj3m6q/image/upload/v1705344747/lapicera1_l3pehr.png",
+        "code": "1",
+        "stock": 10
+    },
+    {
+        "id": 2,
+        "title": "Lapiceras Bic Colores Cristal x10u",
+        "description": "Lapiceras Bic línea Cristal por 10 dolores surtidos, trazo grueso.",
+        "price": 7600,
+        "thumbnail": "https: //res.cloudinary.com/diklj3m6q/image/upload/v1705344747/lapicera2_k7isxg.png",
+        "code": "2",
+        "stock": 10
+    },
+    {
+        "id": 3,
+        "title": "Cuaderno Exito E7 Rayado",
+        "description": "Cuaderno Exito E7 espiralado tamaño A4. 60 hojas rayadas.",
+        "price": 5650,
+        "thumbnail": "https: //res.cloudinary.com/diklj3m6q/image/upload/v1705344747/cuaderno2_nbj6ye.png",
+        "code": "3",
+        "stock": 10
+    },
+    {
+        "id": 4,
+        "title": "Cuaderno Rivadavia ABC Rayado",
+        "description": "Cuaderno Rivadavia ABC espiralado tamaño A4. 100 hojas rayadas.",
+        "price": 7950,
+        "thumbnail": "https: //res.cloudinary.com/diklj3m6q/image/upload/v1705344747/cuaderno1_vd59wz.png",
+        "code": "4",
+        "stock": 10
+    },
+    {
+        "id": 5,
+        "title": "Resaltadores Ezco Neón x6u",
+        "description": "Pack resaltadores Ezco por 6 unidades, colores neón surtidos, punta biselada.",
+        "price": 2320,
+        "thumbnail": "https://res.cloudinary.com/diklj3m6q/image/upload/v1705344748/resaltador1_tzncqu.png",
+        "code": "5",
+        "stock": 10
+    },
+    {
+        "id": 6,
+        "title": "Resaltadores Trabi Pastel x11u",
+        "description": "Pack resaltadores Trabi por 11 unidades, colores pastel surtidos, punta biselada.",
+        "price": 6350,
+        "thumbnail": "https://res.cloudinary.com/diklj3m6q/image/upload/v1705344748/resaltador2_fszpyb.png",
+        "code": "6",
+        "stock": 10
+    },
+    {
+        "id": 7,
+        "title": "Lápiz Negro Grafito HB Ezco Mito x12u",
+        "description": "Caja por 12 unidades de lapices negro grafito Ezco línea Mito. Graduación HB.",
+        "price": 1500,
+        "thumbnail": "https://res.cloudinary.com/diklj3m6q/image/upload/v1705344747/lapiz1_bdvzor.png",
+        "code": "7",
+        "stock": 10
+    },
+    {
+        "id": 8,
+        "title": "Lápices de colores Filgo Sigma Color x24u",
+        "description": "Caja por 24 unidades de lapices de colores Filgo Sigma Color línea pinto. Lápices estándar.",
+        "price": 3025,
+        "thumbnail": "https://res.cloudinary.com/diklj3m6q/image/upload/v1705344747/lapiz2_q7931q.png",
+        "code": "8",
+        "stock": 10
+    }
+]
