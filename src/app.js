@@ -1,6 +1,7 @@
 import express from 'express';
 import routerCart from '../src/routes/cartRouter.js'
-import productsRouter from '../routes/productsRouter.js';
+import productsRouter from '../src/routes/productsRouter.js';
+import morgan from 'morgan';
 import { __dirname } from './path.js';
 import { errorHandler } from './middlewares/errorHandler.js';
 

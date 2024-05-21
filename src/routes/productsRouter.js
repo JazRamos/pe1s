@@ -57,7 +57,7 @@ router.put('/:pid', async (req, res, next) => {
         if (!productUpdate) {
             res.status(404).json({ msg: 'Error updating product' });
         } else {
-            res.status(200).json(productUpd);
+            res.status(200).json(productUpdate);
         }
     } catch (error) {
         next();
@@ -66,8 +66,8 @@ router.put('/:pid', async (req, res, next) => {
 
 router.delete('/:pid', async (req, res, next) => {
     try {
-        const { id } = req.params;
-        const productDelete = await productManager.deleteProduct(parseInt(id));
+        const { pid } = req.params;
+        const productDelete = await productManager.deleteProduct(parseInt(pid));
         if (!productDelete) {
             res.status(404).json({ msg: 'Error deleting product' });
         } else {

@@ -5,10 +5,10 @@ import { __dirname } from "../path.js";
 
 const cartManager = new CartManager(`${__dirname}../database/carts.json`);
 
-routerCart.get('/:cId', async (req, res, next) => {
+routerCart.get('/:cid', async (req, res, next) => {
     try {
-        const { cId } = req.params;
-        const cart = await cartManager.getCartById(cId);
+        const { cid } = req.params;
+        const cart = await cartManager.getCartById(cid);
         res.json(cart);
         console.log(cart);
     } catch (error) {
@@ -26,11 +26,11 @@ routerCart.post('/', async (req, res, next) => {
     }
 })
 
-routerCart.post('/:cId/product/:pId', async (req, res, next) => {
+routerCart.post('/:cid/product/:pid', async (req, res, next) => {
     try {
-        const { cId } = req.params;
-        const { pId } = req.params;
-        const response = await cartManager.saveProductToCart(cId, parseInt(pId));
+        const { cid } = req.params;
+        const { pid } = req.params;
+        const response = await cartManager.saveProductToCart(cid, parseInt(pid));
         res.json(response);
     } catch (error) {
         next(error)
