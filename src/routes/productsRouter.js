@@ -4,7 +4,8 @@ import { __dirname } from '../path.js';
 import { productValidator } from '../middlewares/productValidator.js';
 
 const router = Router();
-const productManager = new ProductManager(`${__dirname}../database/products.json`);
+const productManager = new ProductManager(` ${__dirname}/database/products.json`);
+
 
 router.get('/', async (req, res,next) => {
     try {

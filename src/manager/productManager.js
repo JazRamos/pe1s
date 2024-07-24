@@ -1,5 +1,8 @@
 import fs from "fs";
 import { v4 as uuidv4 } from "uuid";
+
+const path = "../database/products.json"; 
+
 export default class ProductManager {
     constructor(path) {
         this.path = path;
@@ -74,7 +77,7 @@ export default class ProductManager {
 
 
 
-/* const prodManager = new ProductManager("./products.json")
+/* 
 const prod1 = {
     id: 1,
     title: "Lapicera Bic Round Stic Azul x12u",

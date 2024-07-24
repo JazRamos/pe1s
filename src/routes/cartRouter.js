@@ -3,7 +3,7 @@ const routerCart = Router();
 import CartManager from "../manager/cartManager.js";
 import { __dirname } from "../path.js";
 
-const cartManager = new CartManager(`${__dirname}../database/carts.json`);
+const cartManager = new CartManager(`${__dirname}/database/carts.json`);
 
 routerCart.get('/:cid', async (req, res, next) => {
     try {
